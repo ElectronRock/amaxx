@@ -8,10 +8,17 @@ public class Main {
 
     public static void main(String[] args) {
 
+        double sampleAMatrix[][] = {
+                { 0, 0, 1 },
+                { 1, 1, 1 },
+                { 1, 0, 0 }
+        };
 
-        MatrixNxN matrixInstance = new MatrixNxN(0);
+        MatrixNxN matrixInstance = new MatrixNxN(sampleAMatrix);
 
-        System.out.println("");
+        assert matrixInstance.at(0, 0) < 0;
+
+        System.out.println("Done\n");
     }
 
 }

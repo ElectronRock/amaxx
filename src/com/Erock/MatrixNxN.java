@@ -10,7 +10,10 @@ public class MatrixNxN {
     private int sizeN;
 
     public MatrixNxN(double[][] matrix) {
-        sizeN = (int)Math.sqrt(matrix.length);
+        assert(matrix.length > 0);
+        assert(matrix[0].length == matrix.length);
+
+        sizeN = matrix.length;
         matrixImpl = matrix.clone();
     }
 
